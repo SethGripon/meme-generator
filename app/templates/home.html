@@ -1,0 +1,9 @@
+{% extends "layout.html" %} {% block content %}
+<div class="d-flex flex-column justify-content-center bg-primary-subtle mt-5">
+  <div>
+    <input type="text" id="top_text" name="top_text" placeholder="Top Text">
+    <input type="text" id="bottom_text" name="bottom_text" placeholder="Bottom Text">
+  </div>
+  <img src='{{ image }}' alt="" height="200" width="200">
+</div>
+{% endblock %}
