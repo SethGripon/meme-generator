@@ -3,9 +3,9 @@ import requests
 import random
 
 meme_url = 'https://api.imgflip.com/get_memes'
-number = random.randint(1, 100)
 
 def getIMageMemes():
+  number = random.randint(1, 100)
   response = requests.get(meme_url)
 
   if response.status_code == 200:
